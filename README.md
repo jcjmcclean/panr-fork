@@ -36,6 +36,25 @@ Zoom and panning effect
 		onLeave: function(){}
 	});
 	```
+	
+4. Plugin now accepts hover element as variable: 
+(allows you to pan a background element while hovering over a foreground element)
+	
+	```javascript
+	$('#panning-element').panr('#hover-element', {
+		sensitivity: 30,
+		scale: false,
+		scaleOnHover: true,
+		scaleTo: 1.1,
+		scaleDuration: .25,
+		panY: true,
+		panX: true,
+		panDuration: 1.25,
+		resetPanOnMouseLeave: false,
+		onEnter: function(){},
+		onLeave: function(){}
+	});
+	```
 
 ## License
 
